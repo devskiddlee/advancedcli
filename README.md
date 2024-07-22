@@ -1,6 +1,8 @@
 # advancedcli
 A python library for an advanced console line interface
 
+[Download Library](https://downgit.github.io/#/home?url=https://github.com/devskiddlee/advancedcli/blob/main/advancedcli.py)
+
 # Utility
 Console Colors such as Foreground, Background and Style elements
 ```py
