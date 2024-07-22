@@ -12,6 +12,21 @@ print(fcolors.BRIGHT_RED + "This is foreground!" + style.RESET + "\n"
 ```
 ![Output of code](/output_imgs/1.png)
 
+Clear the Console
+```py
+from advancedcli import *
+
+clear()
+```
+
+You can set it to use linux syntax
+```py
+from advancedcli import *
+
+use_linux_syntax()
+```
+This will just switch the clear commands
+
 # Functions
 Simple Text with Character & Line Delay
 ```py
@@ -60,3 +75,21 @@ print(inputs)
 ```
 ![Output of code](/output_imgs/5.png)
 ![Output of code](/output_imgs/6.png)
+
+A option-like menu
+```py
+from advancedcli import *
+
+options = options_menu("Best title so far, for sure",      # The title
+                       ["Quality",                         # These are the option-names
+                        "Operating System",
+                        "Best country"],
+                        [["Low", "Med", "High"],           # These are all the possible values for an option
+                         ["Win", "Linux", "macOS"],        # These have no limit but only max 3 will be shown at a time
+                         ["France", "USA", "Germany"]])    # The current and the 2 (if possible) nearest values will be shown
+
+print(options)
+```
+![Output of code](/output_imgs/7.png)
+![Output of code](/output_imgs/8.png)
+![Output of code](/output_imgs/9.png)
